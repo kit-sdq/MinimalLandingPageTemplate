@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Title</title>
+    <link href="./fontawesome/css/fontawesome.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./fontawesome/css/solid.css" />
+  </head>
+
+  <body>
+
+    <div id="logo">
+      <img src="https://via.placeholder.com/150" alt="Logo">
+    </div>
+
+    <div id="link-list">
+      <a href="" class="link-1">
+        <i class="fa-solid fa-vials"></i>
+      </a>
+      <div class="link-1">
+        <span class="title">Test1</span> <span class="desc">Test123</span>
+      </div>
+
+      <a href="" class="link-2">
+        <i class="fa-solid fa-vials"></i>
+      </a>
+      <div class="link-2">
+        <span class="title">Test2</span> <span class="desc">Test234sahdshhs ahjsdhjsdjjhsadhsdhk jsadhjdsh ahdshka</span>
+      </div>
+    </div>
+
+    <style>
+      .link-1 {
+        --col: blue;
+      }
+
+      .link-2 {
+        --col: red;
+      }
+
+      body {
+        width: 100vw;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        padding-top: 7%;
+        align-items: center;
+        gap: 2rem;
+        font-family: sans-serif;
+      }
+
+      #logo {
+        max-height: 30vh;
+        max-width: 60vw;
+      }
+
+      #logo > img {
+        max-height: 100%;
+        max-width: 100%;
+      }
+
+      #link-list {
+        display: grid;
+        gap: 1rem;
+        width: 80%
+      }
+
+      #link-list > div {
+        width: 100%;
+        text-align: center;
+        font-size: larger;
+      }
+
+      .desc {
+        display: none;
+        color: dimgray;
+      }
+
+      .title {
+        color: var(--col);
+        font-weight: bold;
+      }
+
+      #link-list > a {
+        color: var(--col);
+        text-decoration: none;
+        height: 125px;
+        width: 100%;
+        text-align: center;
+      }
+
+      #link-list > a > i {
+        font-size: 100px;
+      }
+
+      @media screen and (min-width: 768px) {
+        #logo {
+          max-height: 30vh;
+          max-width: 50vw;
+        }
+
+        #link-list {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        #link-list > a {
+          text-align: center;
+          grid-row-start: 1;
+          color: dimgray
+        }
+
+        #link-list > a:hover {
+          color: var(--col);
+        }
+
+        #link-list > div {
+          grid-row-start: 2;
+          grid-column-start: 1;
+          grid-column-end: 3;
+          display: none;
+          font-size: x-large;
+        }
+
+        .title::after {
+          content: ":";
+        }
+
+        .desc {
+          display: inline;
+        }
+
+        #link-list > a:hover + div {
+          display: block;
+        }
+      }
+    </style>
+  </body>
+</html>
+
