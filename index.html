@@ -9,28 +9,39 @@
   </head>
 
   <body>
-
+    
     <div id="logo">
-      <img src="https://via.placeholder.com/150" alt="Logo">
+      <img src="https://sdq.kastel.kit.edu/kit-template/img/sdqlogo.svg" alt="Logo">
     </div>
 
     <div id="link-list">
-      <a href="" class="link-1">
+      <a href="" class="link-1 icon">
         <i class="fa-solid fa-vials"></i>
       </a>
-      <div class="link-1">
+      <a href="" class="link-1 text">
         <span class="title">Test1</span> <span class="desc">Test123</span>
-      </div>
+      </a>
 
-      <a href="" class="link-2">
+      <a href="" class="link-2 icon">
         <i class="fa-solid fa-vials"></i>
       </a>
-      <div class="link-2">
+      <a href="" class="link-2 text">
         <span class="title">Test2</span> <span class="desc">Test234sahdshhs ahjsdhjsdjjhsadhsdhk jsadhjdsh ahdshka</span>
-      </div>
+      </a>
+
+      <a href="" class="link-3 icon">
+        <i class="fa-solid fa-vials"></i>
+      </a>
+      <a href="" class="link-3 text">
+        <span class="title">Test3</span> <span class="desc">Test234sahdshhs ahjsdhjsdjjhsadhsdhk jsadhjdsh ahdshka</span>
+      </a>
     </div>
 
     <style>
+      :root {
+        --link-count: 3;
+      }
+
       .link-1 {
         --col: blue;
       }
@@ -39,23 +50,37 @@
         --col: red;
       }
 
+      .link-3 {
+        --col: green;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
       body {
         width: 100vw;
-        overflow: hidden;
+        overflow-y: hidden;
+        overflow-x: auto;
         display: flex;
         flex-direction: column;
         padding-top: 7%;
         align-items: center;
-        gap: 2rem;
         font-family: sans-serif;
+        margin: 0 0 0 0;
+        gap: 2rem;
       }
 
       #logo {
         max-height: 30vh;
         max-width: 60vw;
+        overflow: hidden;
+        text-align: center;
+        display: flex;
       }
 
       #logo > img {
+        flex-grow: 1;
         max-height: 100%;
         max-width: 100%;
       }
@@ -66,10 +91,11 @@
         width: 80%
       }
 
-      #link-list > div {
+      #link-list > a.text {
         width: 100%;
         text-align: center;
         font-size: larger;
+        padding-bottom: 2rem;
       }
 
       .desc {
@@ -82,15 +108,14 @@
         font-weight: bold;
       }
 
-      #link-list > a {
+      #link-list > a.icon {
         color: var(--col);
-        text-decoration: none;
-        height: 125px;
+        height: 110px;
         width: 100%;
         text-align: center;
       }
 
-      #link-list > a > i {
+      #link-list > a.icon > i {
         font-size: 100px;
       }
 
@@ -101,23 +126,24 @@
         }
 
         #link-list {
-          grid-template-columns: repeat(2, minmax(0, 1fr));
+          grid-template-columns: repeat(var(--link-count), minmax(0, 1fr));
         }
 
-        #link-list > a {
+        #link-list > a.icon {
           text-align: center;
           grid-row-start: 1;
-          color: dimgray
+          color: dimgray;
+          height: 125px;
         }
 
-        #link-list > a:hover {
+        #link-list > a.icon:hover {
           color: var(--col);
         }
 
-        #link-list > div {
+        #link-list > a.text {
           grid-row-start: 2;
           grid-column-start: 1;
-          grid-column-end: 3;
+          grid-column-end: calc(var(--link-count) + 1);
           display: none;
           font-size: x-large;
         }
@@ -130,7 +156,7 @@
           display: inline;
         }
 
-        #link-list > a:hover + div {
+        #link-list > a.icon:hover + a.text {
           display: block;
         }
       }
