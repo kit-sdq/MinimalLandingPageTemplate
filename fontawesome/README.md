@@ -43,4 +43,4 @@ Add this code to the style section:
 ```
 
 Change the value of the `--col` variable to the desired color of the icon.
-You can change the N in the class name to any desired text. Make sure to also adjust this class accordingly in the html you pasted previously.
+You can change the `N` in the class name to any desired text. Make sure to also adjust this class accordingly in the html you pasted previously.
