@@ -14,6 +14,9 @@
       <img src="https://sdq.kastel.kit.edu/kit-template/img/sdqlogo.svg" alt="Logo">
     </div>
 
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+
     <div id="link-list">
       <a href="" class="link-1 icon">
         <i class="fa-solid fa-vials"></i>
@@ -68,8 +71,16 @@
         align-items: center;
         font-family: sans-serif;
         margin: 0 0 0 0;
-        gap: 2rem;
+        background-color: #f6f6f6;
       }
+
+      h1, h2 {
+        margin-top: 10px;
+        margin-bottom: 0px;
+      }
+       h2 {
+        font-weight: normal;
+       }
 
       #logo {
         max-height: 30vh;
@@ -87,36 +98,54 @@
 
       #link-list {
         display: grid;
-        gap: 1rem;
-        width: 80%
+        gap: 1rem 0;
+        margin-top: 20px;
+        width: 80%;
+        grid-template-columns: auto 1fr;
+        grid-template-rows: repeat(var(--link-count), 2.5rem);
       }
 
       #link-list > a.text {
         width: 100%;
         text-align: center;
         font-size: larger;
-        padding-bottom: 2rem;
+        grid-column-start: 2;
+        height: 2.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: solid var(--col);
+        border-width: 2px 2px 2px 0px;
+        border-radius: 0px 5px 5px 0px;
       }
 
       .desc {
         display: none;
         color: dimgray;
+        filter: none;
       }
 
       .title {
-        color: var(--col);
+        color: #000;
         font-weight: bold;
       }
 
       #link-list > a.icon {
         color: var(--col);
-        height: 110px;
-        width: 100%;
+        height: 2.5rem;
+        width: 2.5rem;
         text-align: center;
+        grid-column-start: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: solid var(--col);
+        border-width: 2px 0px 2px 2px;
+        border-radius: 5px 0 0 5px;
       }
 
       #link-list > a.icon > i {
-        font-size: 100px;
+        font-size: 2rem;
       }
 
       @media screen and (min-width: 768px) {
@@ -127,15 +156,24 @@
 
         #link-list {
           grid-template-columns: repeat(var(--link-count), 150px);
+          grid-template-rows: 125px auto;
           width: fit-content;
         }
 
         #link-list > a.icon {
           text-align: center;
           grid-row-start: 1;
+          grid-column-start: unset;
           color: dimgray;
           height: 125px;
+          width: 125px;
+          border: none
         }
+
+        #link-list > a.icon > i {
+        font-size: 100px;
+      }
+
 
         #link-list > a.icon:hover {
           color: var(--col);
@@ -147,10 +185,16 @@
           grid-column-end: calc(var(--link-count) + 1);
           display: none;
           font-size: x-large;
+          padding-bottom: 2rem;
+          border: none;
         }
 
         .title::after {
           content: ":";
+        }
+
+        .title {
+          color: var(--col);
         }
 
         .desc {
