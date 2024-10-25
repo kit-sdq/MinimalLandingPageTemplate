@@ -1,7 +1,7 @@
 # Minimal Landing Page Template
 
-![Desktop Image](docs/desktop.png)
-![Mobile Image](docs/mobile.png)
+| ![Desktop Image](docs/desktop.png) | ![Mobile Image](docs/mobile.png) |
+|-|-|
 
 ## Customization
 
