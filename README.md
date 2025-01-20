@@ -17,6 +17,7 @@ Change the tile by replacing the text on line 6.
 https://github.com/kit-sdq/MinimalLandingPageTemplate/blob/07bbb766efe73ca25c28ee12e319f1f9091386a1/index.html#L6
 
 The two headings can be changed on lines 17 and 18.
+https://github.com/kit-sdq/MinimalLandingPageTemplate/blob/14af47a2d5fb66e8c65dff5f2c1312db744f03b8/index.html#L17-L18
 
 ### Adding a link
 
@@ -48,6 +49,8 @@ Change the value of the `--col` variable to the desired color of the icon.
 You can change the `N` in the class name to any desired text. Make sure to also adjust this class accordingly in the html you pasted previously.
 
 Lastly change the `--link-count` variable to the new total link count:
+https://github.com/kit-sdq/MinimalLandingPageTemplate/blob/14af47a2d5fb66e8c65dff5f2c1312db744f03b8/index.html#L45
 
 ### Icon size
-The icon size can be changed here:
+The icon size on the desktop can be changed here:
+https://github.com/kit-sdq/MinimalLandingPageTemplate/blob/14af47a2d5fb66e8c65dff5f2c1312db744f03b8/index.html#L46
