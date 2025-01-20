@@ -16,9 +16,11 @@ Change the tile by replacing the text on line 6.
 
 https://github.com/kit-sdq/MinimalLandingPageTemplate/blob/07bbb766efe73ca25c28ee12e319f1f9091386a1/index.html#L6
 
+The two headings can be changed on lines 17 and 18.
+
 ### Adding a link
 
-To add a new link copy the folowing code and paste it into `div#link-list`, so that the link is placed in the desired place.
+To add a new link copy the following code and paste it into `div#link-list`, so that the link is placed in the desired place.
 
 ```html
 <a href="" class="link-N icon">
@@ -44,3 +46,8 @@ Add this code to the style section:
 
 Change the value of the `--col` variable to the desired color of the icon.
 You can change the `N` in the class name to any desired text. Make sure to also adjust this class accordingly in the html you pasted previously.
+
+Lastly change the `--link-count` variable to the new total link count:
+
+### Icon size
+The icon size can be changed here:
