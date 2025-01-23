@@ -33,7 +33,7 @@
       </a>
 
       <a href="" class="link-3 icon">
-        <i class="fa-solid fa-graduation-cap"></i>
+        <i class="fa-solid fa-vials"></i>
       </a>
       <a href="" class="link-3 text">
         <span class="title">dolor</span> <span class="desc">sit amet, consetetur sadipscing elitr</span>
@@ -161,9 +161,10 @@
         }
 
         #link-list {
-          grid-template-columns: repeat(var(--link-count), 150px);
+          grid-template-columns: repeat(var(--link-count), 1fr);
           grid-template-rows: 125px auto;
           width: fit-content;
+          max-width: 100vw;
         }
 
         #link-list > a.icon {
@@ -171,14 +172,17 @@
           grid-row-start: 1;
           grid-column-start: unset;
           color: dimgray;
-          height: 125px;
-          width: 125px;
+          height: calc(min(1, 6/var(--link-count)) * 125px);
+          width: calc(min(1, 6/var(--link-count)) * 125px);
+          text-align: center;
           border: none
         }
 
         #link-list > a.icon > i {
-        font-size: var(--big-icon-size);
-      }
+          font-size: calc(min(1, 6/var(--link-count)) * var(--big-icon-size));
+          max-width: 100%;
+          width: 100%;
+        }
 
 
         #link-list > a.icon:hover {
@@ -209,6 +213,18 @@
 
         #link-list > a.icon:hover + a.text {
           display: block;
+        }
+      }
+
+      @media screen and (min-width: 1250px) {
+
+        #link-list > a.icon > i {
+          font-size: var(--big-icon-size);
+        }
+
+        #link-list > a.icon {
+          height: 125px;
+          width: 125px;
         }
       }
     </style>
