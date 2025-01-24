@@ -165,7 +165,7 @@
         }
 
         #link-list {
-          grid-template-columns: repeat(var(--link-count), 1fr);
+          grid-template-columns: repeat(var(--link-count), calc(min(1, 6/var(--link-count)) * 125px));
           grid-template-rows: 125px auto;
           width: fit-content;
           max-width: 100vw;
@@ -221,6 +221,10 @@
       }
 
       @media screen and (min-width: 1250px) {
+
+        #link-list {
+          grid-template-columns: repeat(var(--link-count), 125px);
+        }
 
         #link-list > a.icon > i {
           font-size: var(--big-icon-size);
