@@ -10,6 +10,11 @@
 Change the logo by replacing the src of the image on line 14.
 https://github.com/kit-sdq/MinimalLandingPageTemplate/blob/07bbb766efe73ca25c28ee12e319f1f9091386a1/index.html#L14
 
+
+### Favicon
+
+To change the favicon replace the href of the link on line 9 with your desired favicon.
+
 ### Title
 
 Change the tile by replacing the text on line 6.
