@@ -7,8 +7,8 @@
 
 ### Logo
 
-Change the logo by replacing the src of the image on line 14.
-https://github.com/kit-sdq/MinimalLandingPageTemplate/blob/07bbb766efe73ca25c28ee12e319f1f9091386a1/index.html#L14
+Change the logo by replacing the src of the image on line 15.
+https://github.com/kit-sdq/MinimalLandingPageTemplate/blob/62e1d51061aa175f9b377d8bbbeb0bbe1161adba/index.html#L15
 
 
 ### Favicon
@@ -19,10 +19,10 @@ To change the favicon replace the href of the link on line 9 with your desired f
 
 Change the tile by replacing the text on line 6.
 
-https://github.com/kit-sdq/MinimalLandingPageTemplate/blob/07bbb766efe73ca25c28ee12e319f1f9091386a1/index.html#L6
+https://github.com/kit-sdq/MinimalLandingPageTemplate/blob/62e1d51061aa175f9b377d8bbbeb0bbe1161adba/index.html#L6
 
-The two headings can be changed on lines 17 and 18.
-https://github.com/kit-sdq/MinimalLandingPageTemplate/blob/14af47a2d5fb66e8c65dff5f2c1312db744f03b8/index.html#L17-L18
+The two headings can be changed on lines 18 and 19.
+https://github.com/kit-sdq/MinimalLandingPageTemplate/blob/62e1d51061aa175f9b377d8bbbeb0bbe1161adba/index.html#L18-L19
 
 ### Adding a link
 
@@ -54,8 +54,8 @@ Change the value of the `--col` variable to the desired color of the icon.
 You can change the `N` in the class name to any desired text. Make sure to also adjust this class accordingly in the html you pasted previously.
 
 Lastly change the `--link-count` variable to the new total link count:
-https://github.com/kit-sdq/MinimalLandingPageTemplate/blob/14af47a2d5fb66e8c65dff5f2c1312db744f03b8/index.html#L45
+https://github.com/kit-sdq/MinimalLandingPageTemplate/blob/62e1d51061aa175f9b377d8bbbeb0bbe1161adba/index.html#L46
 
 ### Icon size
 The icon size on the desktop can be changed here:
-https://github.com/kit-sdq/MinimalLandingPageTemplate/blob/14af47a2d5fb66e8c65dff5f2c1312db744f03b8/index.html#L46
+https://github.com/kit-sdq/MinimalLandingPageTemplate/blob/62e1d51061aa175f9b377d8bbbeb0bbe1161adba/index.html#L47
